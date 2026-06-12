@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdirisaq Osman — Fullstack &amp; DevOps Engineer</title>
+  <meta name="description" content="Fullstack and DevOps engineer. Selected projects: Pulse (uptime monitor on Kubernetes) and LeadScout (data-collection pipeline)." />
+  <meta property="og:title" content="Abdirisaq Osman — Fullstack & DevOps Engineer" />
+  <meta property="og:description" content="Selected projects: Pulse — self-hosted uptime monitor on Kubernetes. LeadScout — local-business lead pipeline." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">AO<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="https://github.com/abdirisaqosman" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Fullstack &middot; DevOps</p>
+      <h1>Abdirisaq Osman</h1>
+      <p class="lede">
+        I build production-shaped software end to end — typed APIs, background
+        workers, and React dashboards, shipped in containers and run on
+        Kubernetes behind Cloudflare.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#work">View projects</a>
+        <a class="btn ghost" href="mailto:abdirisaq@highmor.com">Get in touch</a>
+      </div>
+      <ul class="links">
+        <li><a href="https://github.com/abdirisaqosman" target="_blank" rel="noopener">github.com/abdirisaqosman</a></li>
+        <li><a href="mailto:abdirisaq@highmor.com">abdirisaq@highmor.com</a></li>
+      </ul>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <h2 class="section-title"><span>01</span> Selected work</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Pulse</h3>
+          <span class="status building">🚧 building</span>
+        </div>
+        <p class="tagline">Self-hosted uptime monitor</p>
+        <p class="desc">
+          Register HTTP endpoints; a decoupled background worker pings them on a
+          schedule and a live dashboard shows status, uptime&nbsp;%, and latency
+          over time. The project <em>is</em> the DevOps artifact — Fastify API,
+          Postgres, a separate worker process, then Docker → Kubernetes (kind) →
+          Cloudflare Tunnel, with CI that deploys to an ephemeral cluster and
+          smoke-tests it.
+        </p>
+        <ul class="tags">
+          <li>TypeScript</li><li>Fastify</li><li>Postgres</li><li>Drizzle</li>
+          <li>React</li><li>Docker</li><li>Kubernetes</li><li>GitHub Actions</li><li>Cloudflare</li>
+        </ul>
+        <div class="card-links">
+          <a class="repo" href="https://github.com/abdirisaqosman/pulse" target="_blank" rel="noopener">
+            Source <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>LeadScout</h3>
+          <span class="status pipeline">data pipeline</span>
+        </div>
+        <p class="tagline">Local-business lead finder</p>
+        <p class="desc">
+          Search a category + location, scrape matching businesses through
+          pluggable providers — synthetic data, the official Google&nbsp;Places
+          API, or a Playwright browser scrape — de-duplicate them globally, then
+          browse, filter, and export from a dashboard. A real data-collection
+          pipeline: scrapers → background jobs → Postgres → REST API → React,
+          fully containerized.
+        </p>
+        <ul class="tags">
+          <li>Python</li><li>FastAPI</li><li>SQLModel</li><li>Postgres</li>
+          <li>Playwright</li><li>React</li><li>Docker</li>
+        </ul>
+        <div class="card-links">
+          <a class="repo" href="https://github.com/abdirisaqosman/leadscout" target="_blank" rel="noopener">
+            Source <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <h2 class="section-title"><span>02</span> Stack</h2>
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h4>Languages</h4>
+          <p>TypeScript · Python · SQL</p>
+        </div>
+        <div class="stack-col">
+          <h4>Backend</h4>
+          <p>Fastify · FastAPI · REST · JWT · Postgres · Drizzle · SQLModel</p>
+        </div>
+        <div class="stack-col">
+          <h4>Frontend</h4>
+          <p>React · Vite · Tailwind · TanStack Query · Recharts</p>
+        </div>
+        <div class="stack-col">
+          <h4>DevOps &amp; Edge</h4>
+          <p>Docker · Kubernetes · Kustomize · GitHub Actions · Cloudflare</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built by Abdirisaq Osman.</p>
+    <p class="muted">
+      <a href="https://github.com/abdirisaqosman" target="_blank" rel="noopener">GitHub</a>
+      ·
+      <a href="mailto:abdirisaq@highmor.com">abdirisaq@highmor.com</a>
+    </p>
+  </footer>
+</body>
+</html>
